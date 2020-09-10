@@ -1,6 +1,6 @@
 def is_subset_sum(array,target):
     '''
-    Function to check if a subset which adds upto a particular sum exists in an array
+    Function to check if a subset exists which adds upto a particular sum exists in an array
     '''
     '''
     3 4 1 2 , 6 -> True
