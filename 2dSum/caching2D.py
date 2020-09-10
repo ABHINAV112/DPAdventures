@@ -46,7 +46,6 @@ class MatrixSumsCached:
     def get_val_dp(self,i,j):
         return self.dp[i][j]
 
-    # fix this logic
     def sub_matrix_sum(self,start_coords,end_coords):
         up_left = 0
         up = 0
@@ -57,7 +56,6 @@ class MatrixSumsCached:
             left = self.get_val_dp(start_coords[0],start_coords[1]-1)
         if(start_coords[0]>0 and start_coords[1]>0):
             up_left = self.get_val_dp(start_coords[0]-1,start_coords[1]-1)
-
 
         return self.get_val_dp(*end_coords) - up - left + up_left
 
